@@ -42,7 +42,7 @@ const AddInput = () => {
           id="todo-input"
           name="todo-input"
           autoComplete="off"
-          placeholder="Type a Todo then hit Enter ..."
+          placeholder="Type a Todo then hit Enter ↵ ..."
           value={inputValue}
           required
           enterKeyHint="enter"
