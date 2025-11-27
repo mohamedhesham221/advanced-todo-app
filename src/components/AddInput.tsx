@@ -42,8 +42,10 @@ const AddInput = () => {
           id="todo-input"
           name="todo-input"
           autoComplete="off"
-          placeholder="Type a Todo ..."
+          placeholder="Type a Todo then hit Enter ..."
           value={inputValue}
+          required
+          enterKeyHint="enter"
           onChange={(e) => setInputValue(e.target.value)}
           className="w-full h-full focus:outline-0 grow placeholder:text-gray-600-light caret-blue-600 font-primary placeholder:font-primary dark:text-purple-300-dark text-md"
         />
