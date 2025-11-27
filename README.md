@@ -1,10 +1,11 @@
 # Todo App
 
-A modern, feature-rich Progressive Web App (PWA) built with React, TypeScript, TailwindCSS. Drag-and-drop reordering, responsive interface that works seamlessly on desktop and mobile devices.
+A modern, feature-rich Progressive Web App (PWA) built with React, TypeScript, TailwindCSS. Drag-and-drop reordering, random motivational quotes, responsive interface that works seamlessly on desktop and mobile devices.
 
 ## ✨ Features
 
 - ✅ Create, read, update, and delete todos
+- 📝 Random motivational quotes on each load
 - 🎯 Drag-and-drop reordering with SortableJS
 - 📅 Date formatting with date-fns
 - 💾 State management with Zustand
