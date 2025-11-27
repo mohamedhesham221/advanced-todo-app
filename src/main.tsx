@@ -4,14 +4,17 @@ import "./index.css";
 import App from "./App.tsx";
 import { registerSW } from "virtual:pwa-register";
 
-registerSW({
+const updateSW = registerSW({
   onNeedRefresh() {
     const userConfirmed = window.confirm(
       "A new version of this app is available. Load the new version?"
     );
     if (userConfirmed) {
-      window.location.reload();
+      updateSW(true);
     }
+  },
+  onOfflineReady() {
+    console.log("App is ready to work offline");
   },
 });
 createRoot(document.getElementById("root")!).render(

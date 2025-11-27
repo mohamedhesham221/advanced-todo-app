@@ -9,6 +9,10 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
+      devOptions: {
+        enabled: false, 
+        type: "module",
+      },
       manifest: {
         name: "Todo App",
         short_name: "Todo",
@@ -16,16 +20,19 @@ export default defineConfig({
         theme_color: "#7346e5",
         background_color: "#ffffff",
         display: "standalone",
+        orientation: "portrait",
         start_url: "/",
         id: "/",
+        scope: "/",
+        categories: ["productivity", "utilities"],
         icons: [
           {
-            src: "assets/icons/android-launchericon-192-192.png",
+            src: "assets/icons/android/android-launchericon-192-192.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "assets/icons/android-launchericon-512-512.png",
+            src: "assets/icons/android/android-launchericon-512-512.png",
             sizes: "512x512",
             type: "image/png",
           },
@@ -38,13 +45,17 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ["**/*"],
+        globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
             handler: "CacheFirst",
             options: {
               cacheName: "google-fonts-stylesheets",
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+              },
             },
           },
           {
@@ -52,6 +63,13 @@ export default defineConfig({
             handler: "CacheFirst",
             options: {
               cacheName: "google-fonts-webfonts",
+              expiration: {
+                maxEntries: 30,
+                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
             },
           },
         ],
