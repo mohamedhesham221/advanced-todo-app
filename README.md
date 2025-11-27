@@ -25,7 +25,7 @@ A modern, feature-rich Progressive Web App (PWA) built with React, TypeScript, T
 
 ## Screenshots
 
-![Todo App Screenshot](./screenshot.png)
+![Todo App Screenshot](./public/assets/screenshot.png)
 
 ## 📋 Prerequisites
 
