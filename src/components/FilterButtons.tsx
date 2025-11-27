@@ -22,7 +22,7 @@ export const FilterButtons = ({
       {filterButtons.map((button) => (
         <li key={button.text} className="leading-0">
           <button
-            className="font-primary font-medium text-gray-600-light hover:text-navy-850 dark:text-gray-600-dark dark:hover:text-purple-100-hover text-sm cursor-pointer leading-none"
+            className="font-primary font-medium text-gray-600-light hover:text-navy-850 dark:text-gray-600-dark dark:hover:text-purple-100-hover text-[9px] md:text-xs lg:text-base cursor-pointer leading-none"
             type="button"
             onClick={() => setFilter(button.value)}
             style={

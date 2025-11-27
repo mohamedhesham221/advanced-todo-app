@@ -56,7 +56,7 @@ const Todos = () => {
               }}
             >
               {/**Total Items Left */}
-              <p className="font-primary text-gray-600-light dark:text-gray-600-dark text-sm leading-0">
+              <p className="font-primary text-gray-600-light dark:text-gray-600-dark text-[9px] md:text-xs lg:text-base leading-0">
                 {getTodosLeft()} items left
               </p>
               {/* Filter Buttons */}
