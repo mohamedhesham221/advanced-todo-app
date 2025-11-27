@@ -6,7 +6,7 @@ const ThemeSwitcher = () => {
   const { theme, toggleTheme } = useTheme();
   const iconSize: number = 25;
   return (
-    <button className="text-gray-50 cursor-pointer" onClick={toggleTheme}>
+    <button className="text-gray-50 cursor-pointer" type="button" aria-label="Toggle Theme" onClick={toggleTheme}>
       {theme === "light" ? (
         <FaMoon size={iconSize} />
       ) : (

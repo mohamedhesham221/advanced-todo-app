@@ -36,8 +36,7 @@ export const UpdateTodoInput = ({
   w-[90%] max-w-md h-[50px] rounded-sm bg-gray-50 dark:bg-navy-900 shadow z-9999 overflow-hidden"
       >
         <fieldset
-          className="w-full h-full flex justify-start gap-3.5 items-center"
-          style={{ paddingInlineStart: "15px" }}
+          className="w-full h-full flex justify-start gap-3.5 items-center ps-[15px]"
         >
           <FaRegCircle
             size={18}

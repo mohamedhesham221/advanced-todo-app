@@ -24,11 +24,7 @@ const Todos = () => {
   console.log(filter);
 
   return (
-    <div
-      style={{
-        marginTop: "30px",
-      }}
-    >
+    <div className="mt-[30px]">
       {!todos.length && (
         <p className="text-center text-black dark:text-gray-400 font-primary">
           No Todos Available !!
@@ -50,10 +46,7 @@ const Todos = () => {
           {/**Todo List Footer */}
           <li className="w-full h-[50px] bg-gray-50 dark:bg-navy-900 dark:border-gray-600">
             <div
-              className="w-full h-full flex justify-between gap-3.5 items-center"
-              style={{
-                padding: "0 15px",
-              }}
+              className="w-full h-full flex justify-between gap-3.5 items-center px-[15px]"
             >
               {/**Total Items Left */}
               <p className="font-primary text-gray-600-light dark:text-gray-600-dark text-[9px] md:text-xs lg:text-base leading-0">
@@ -70,8 +63,7 @@ const Todos = () => {
       {/**Drag and Drop Hint */}
       {todos && todos.length !== 0 && (
         <p
-          className="text-center text-gray-600-light dark:text-gray-600-dark text-base font-primary"
-          style={{ marginTop: "40px" }}
+          className="text-center text-gray-600-light dark:text-gray-600-dark text-base font-primary mt-10"
         >
           Drag and drop to reorder todos
         </p>

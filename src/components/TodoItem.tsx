@@ -23,10 +23,7 @@ const TodoItem = ({
       className="w-full min-h-[50px] bg-gray-50 dark:bg-navy-900 border-b border-gray-300 dark:border-gray-600 cursor-grab active:cursor-grabbing"
     >
       <div
-        className="w-full min-h-[50px] flex justify-start gap-3.5 items-center"
-        style={{
-          padding: "0 15px",
-        }}
+        className="w-full min-h-[50px] flex justify-start gap-3.5 items-center px-[15px]"
       >
         {/**Todo Complete Button */}
         <button

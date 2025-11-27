@@ -25,11 +25,10 @@ const AddInput = () => {
       onSubmit={handleSubmit}
     >
       <fieldset
-        className="w-full h-full flex justify-start gap-3.5 items-center "
-        style={{
-          paddingInlineStart: "15px",
-        }}
+        className="w-full h-full flex justify-start gap-3.5 items-center ps-4"
+        
       >
+        <legend className="sr-only">Add Todo</legend>
         <FaRegCircle
           size={18}
           className="text-gray-300-light dark:text-gray-600"
