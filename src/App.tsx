@@ -36,9 +36,6 @@ function App() {
               </div>
               <ShowQuote />
               <AddInput />
-              <p className="text-center text-gray-50 text-xs">
-                <i>hint: Tap or Press Enter to add or edit a todo</i>
-              </p>
               <Todos />
               
             </div>
